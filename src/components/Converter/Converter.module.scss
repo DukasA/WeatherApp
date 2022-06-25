@@ -1,0 +1,62 @@
+ .converter {
+    position: relative;
+    padding: 100px;
+    z-index: 10;
+
+    @media screen and (max-width: 1280px) {
+        padding: 50px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        font-weight: 900;
+        opacity: 0.6;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 780px) {
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid rgb(32, 28, 28);
+        border-radius: 20px;
+        padding: 50px;
+        border-radius: 19px;
+        //backdrop-filter: blur(6px);
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+        border: 0px rgba(255,255,255,0.4) solid;
+        border-top: 1px rgba(40,40,40,0.1) solid;
+        border-bottom: 0px rgba(40,40,40,0.35) solid;
+        border-right: 0px rgba(40,40,40,0.35) solid;
+
+        @media screen and (max-width: 780px) {
+            padding: 0px 20px 20px 20px;
+        }
+
+        @media screen and (max-width: 780px) {
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            color: rgb(49, 63, 66);
+
+            @media screen and (max-width: 780px) {
+                margin: 20px 0px 20px 0px;
+            }
+        }
+    }
+}
